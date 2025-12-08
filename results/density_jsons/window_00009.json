@@ -1,0 +1,14 @@
+{
+  "window_index": 9,
+  "frame_start_index": 4050,
+  "frame_end_index": 4499,
+  "timestamp_start": "0:02:14",
+  "timestamp_end": "0:02:29",
+  "avg_count": 0.2777777777777778,
+  "avg_density": 0.00462962962962963,
+  "samples": [
+    "frame_00004050.jpg",
+    "frame_00004275.jpg",
+    "frame_00004499.jpg"
+  ]
+}

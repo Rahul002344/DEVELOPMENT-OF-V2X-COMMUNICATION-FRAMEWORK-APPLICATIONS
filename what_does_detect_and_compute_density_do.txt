@@ -1,0 +1,21 @@
+detect_and_compute_density.py — main script (detection + density)
+
+This script:
+
+Loads the IISc pretrained model from Hugging Face (Ultralytics YOLO("iisc-aim/UVH-26")).
+
+Runs inference over a video / directory of frames.
+
+Loads the COCO annotation JSON from UVH-26 (MV/ST) to read lane/ROI metadata if present.
+
+Computes per-frame counts, per-lane densities (count / lane_length if lane lengths available), and per-window aggregated stats.
+
+Exports:
+
+per_frame_counts.csv (frame_id, timestamp, counts..., density_overall)
+
+window_summaries.csv (15s windows default)
+
+density_jsons/*.json per-window (ready to send to central)
+
+Important: UVH-26’s annotation JSON is COCO-format; the script reads annotations and images and uses image_id to match. If your camera/video differs from dataset images, the script still works: it computes density using detected boxes and an ROI/lane mapping if you provide it (see README section below).

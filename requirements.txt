@@ -1,0 +1,10 @@
+# minimal, add others as needed
+ultralytics>=8.0.0
+datasets
+pycocotools
+opencv-python
+pandas
+numpy
+tqdm
+fastapi    # optional: if you want to serve endpoints later
+uvicorn    # optional
