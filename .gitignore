@@ -1,0 +1,14 @@
+# Datasets
+Data Set/
+data/
+dataset/
+
+# Results / outputs
+results/
+*.csv
+*.json
+*.png
+
+# Python cache
+__pycache__/
+*.pyc
